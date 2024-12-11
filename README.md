@@ -14,7 +14,7 @@ The method consists of starting from a Hamiltonian that does not correspond to o
 
 4. I create the function ``U_init()`` which creates a circuit that returns the ground state of hx.
 
-5. I create the function u_n which applies the Suzuki-Trotter approximation of $U_{\eta}$. We notice that at each iteration, as $\frac{j - 1}{m(\eta -1}$ increases, $\frac{\eta - j}{m(\eta -1}$ decreases, which reflects the transition from the Hamiltonian hx to hc.
+5. I create the function u_n which applies the Suzuki-Trotter approximation of $U_{\eta}$. We notice that at each iteration, as $\frac{j - 1}{m(\eta -1)}$ increases, $\frac{\eta - j}{m(\eta -1)}$ decreases, which reflects the transition from the Hamiltonian hx to hc.
 
 6. The function qaoa_circuit simply initializes the circuit in the ground state of $H_{x}$ before applying ``u_n``.
 
